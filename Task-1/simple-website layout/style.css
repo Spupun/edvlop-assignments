@@ -1,0 +1,247 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        margin-top: 20px;
+    }
+    .social {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    /* width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.867), rgba(13, 97, 99, 0.75)), url(assets/background.jpg);
+    background-size: cover;
+    background-position: center; */
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0;left:0;right:0;
+    z-index: 1000;
+}
+@media screen and (max-width:600px) {
+    h2{
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        /* border-radius: 10%; */
+        height: 20px;
+    }
+    
+}
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(46, 104, 84);
+    box-sizing: border-box;
+    border-radius: 10%;
+    height: 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+    color: #14ba88;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.about {
+    background: #E6E6FA;
+}
+
+.parent {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-style: italic;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+}
+
+.services {
+    width: 100vw;
+    min-height: 100vh;
+    background: #8a989e;
+    padding: 50px 0; 
+}
+
+h2 {
+    font-size: 4rem;
+    padding: 50px 0;
+    text-align: center;
+    color: #000;
+}
+
+p {
+    text-align: center;
+}
+
+.parents {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 200px;
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.child:first-child {
+    background: #ffbe76;
+}
+
+.child:nth-child(2) { 
+    background: #2c5a55;
+}
+
+.child:last-child {
+    background: #ff7979;
+}
+
+#portfolio {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+#portfolio h2 {
+    font-size: 4rem;
+    padding: 50px 0;
+    text-align: center;
+    color: #0d0b0b;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:fixed;
+}
+
+.img-container {
+    margin: 10px;
+    background:rgb(226, 228, 223); 
+  }
+  
+.img-container img {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(39, 115, 173, 0.582);
+}
+
+.contact-form {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+form input,
+textarea {
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsla(260, 87%, 29%, 0.655);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+form input::placeholder,
+textarea::placeholder {
+    color: var(--text-color);
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-button {
+    width: 160px;
+    cursor: pointer;
+    background: #6919c4;
+    color: #fff;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 35%;
+}
+
+.contact-button:hover {
+    background: var(--hover);
+}
